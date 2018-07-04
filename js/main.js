@@ -27,6 +27,16 @@ function getBip(num){
      console.log(getBip('77108068'))        
 //{"N&ordm; tarjeta bip! ": "77108068", Estado de contrato: "Contrato Activo", Saldo  tarjeta: "$220", Fecha saldo: "13/06/2018 11:09"}
 
+//Necesito guardar el correo y la clave
+function guardarCorreo() {
+  if((document.getElementById("login-username").value === '')) {
+    alert("Reingresa tu mail")
+  } else{
+      let email = document.getElementById("login-username").value;
+      
+      localStorage.setItem("mail",email,);
+  }
+}
 
     
      
